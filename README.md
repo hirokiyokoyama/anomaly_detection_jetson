@@ -18,3 +18,6 @@ Parameters other than "threshold" are ignored.
 ### Eternally
 1. Edit 5th argument of "gen.add" (initially 0.1) in ./yolo_ros/cfg/YoloDetector.cfg
 1. ./build.sh
+
+## Changing image topic
+1. Edit the last line in ./run.sh (initially /camera/image_rect_color)

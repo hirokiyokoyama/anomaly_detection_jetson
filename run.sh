@@ -8,5 +8,5 @@ xhost +
 ros-container -it --rm --name anomaly-detector \
 	      -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
 	      anomaly-detector-jetson \
-	      rosrun yolo_ros yolo.py --ckpt=/yolo_ckpt \
-	      image:=/camera/color/image_rect_color
+	      rosrun yolo_ros yolo.py --ckpt=/yolo_ckpt/model.ckpt \
+	      image:=/camera/image_rect_color

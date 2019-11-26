@@ -1,2 +1,4 @@
 yolo_ros
+yolo_ckpt/*
+!yolo_ckpt/PUT_CHECKPOINT_FILES_HERE
 

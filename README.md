@@ -1,7 +1,7 @@
 # anomaly_detection_jetson
 
 ## How to build
-1. clone http://github.com/hirokiyokoyama/anomaly_detection_jetson
+1. git clone http://github.com/hirokiyokoyama/anomaly_detection_jetson
 1. cd anomaly_detection_jetson
 1. Download checkpoint files (model.ckpt.*) from the colab notebook and put them into ./yolo_ckpt/
 1. ./build.sh

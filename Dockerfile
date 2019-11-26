@@ -3,7 +3,7 @@ LABEL maintainer "hirokiyokoyama <h-yokoyama@craft-server.co.jp>"
 
 # setup yolo_ros
 ADD yolo_ros /catkin_ws/src/yolo_ros
-ADD CKPT_DIR /catkin_ws/src/yolo_ros/data/ckpt
+ADD yolo_ckpt /yolo_ckpt
 
 #RUN . /catkin_ws/devel/setup.sh && apt-get update && rosdep update \
 #    && rosdep install -y yolo_ros \
@@ -12,4 +12,5 @@ RUN . /catkin_ws/devel/setup.sh && cd /catkin_ws && catkin_make
 #RUN . /opt/ros/melodic/setup.sh && cd /catkin_ws && catkin_make
 
 CMD ["rosrun", "yolo_ros", "yolo.py", \
+     "--ckpt=/yolo_ckpt", \
      "image:=/camera/color/image_rect_color"]
